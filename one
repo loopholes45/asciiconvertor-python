@@ -1,0 +1,21 @@
+def text_to_ascii(text):
+    ascii_values = []
+    for char in text:
+        ascii_values.append(ord(char))
+    return ascii_values
+
+def ascii_to_text(ascii_values):
+    text = ""
+    for value in ascii_values:
+        text += chr(value)
+    return text
+
+# Example usage
+text = "Hello, World!"
+ascii_values = text_to_ascii(text)
+print("Text to ASCII:")
+print(ascii_values)
+
+converted_text = ascii_to_text(ascii_values)
+print("ASCII to Text:")
+print(converted_text)
